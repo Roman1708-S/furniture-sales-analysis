@@ -7,6 +7,23 @@ models to predict order revenue and delivery delay risk.
 > Built as a portfolio project by a Python/Data Science learner with
 > real-world experience in the custom furniture industry.
 
+## Power BI — Furniture Delivery Performance
+
+The report compares planned and actual delivery lead times for 4,200 synthetic furniture orders from 2024–2025. Use the category chart to compare late delivery rates and the order-level table to inspect the longest delays.
+
+![Furniture Delivery Performance dashboard preview](visuals/furniture-delivery-performance.png)
+
+| Metric | Result |
+| --- | ---: |
+| Delivered on time or early | 2,658 (63.3%) |
+| Delivered late | 1,542 (36.7%) |
+| Category with the highest late delivery rate | Chairs, 39.3% (242 of 616) |
+| Longest delivery delay | 14 days |
+
+A delivery is late when actual delivery days exceed planned delivery days. The report uses DAX measures to calculate order counts and the late delivery rate.
+
+[Download the Power BI report (.pbix)](reports/furniture-delivery-performance.pbix?raw=true) and open it in Power BI Desktop. To refresh the CSV source on a different computer, point the query to [data/furniture_sales.csv](data/furniture_sales.csv) in your local copy of the repository.
+
 ## Project Overview
 
 This project simulates a realistic dataset for a furniture manufacturing
